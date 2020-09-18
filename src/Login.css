@@ -8,3 +8,11 @@
     max-width: 320px;
   }
 }
+
+#buttons {
+  display: flex;
+}
+
+#buttons .btn {
+  margin: 10px;
+}

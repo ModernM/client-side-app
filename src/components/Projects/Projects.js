@@ -13,7 +13,15 @@ function Projects() {
   const [projects, loadProjects] = useState([]);
 
   const fetchProjects = async () => {
-    const data = await fetch("http://localhost:5000/projects");
+    const data = await fetch("http://34.89.31.240:5000/projects", {
+      method: "GET",
+      headers: {
+        "Content-Type": "pplication/json",
+        Authorization: `bearer ${localStorage.getItem("token")}`,
+      },
+      mode: "cors",
+      cache: "default",
+    });
     const projects = await data.json();
     loadProjects(projects);
   };

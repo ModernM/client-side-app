@@ -22,7 +22,7 @@ function EditProject({ match }) {
 
   const fetchProject = async () => {
     const fetchedProject = await fetch(
-      `http://localhost:5000/projects/${match.params.id}`
+      `http://34.89.31.240:5000/projects/${match.params.id}`
     );
     const project = await fetchedProject.json();
     setProject(project);
@@ -46,7 +46,7 @@ function EditProject({ match }) {
     };
     console.log(project);
     try {
-      fetch(`http://localhost:5000/projects/patch/${match.params.id}`, {
+      fetch(`http://34.89.31.240:5000/projects/patch/${match.params.id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(project),

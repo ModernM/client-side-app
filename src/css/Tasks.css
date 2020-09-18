@@ -1,0 +1,32 @@
+#page-name {
+  text-align: center;
+  font-size: 50px;
+  background-color: #cdbec1;
+  color: #000;
+}
+
+.activ-info {
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 50%;
+  display: block;
+  background-color: #cdbec1;
+  width: 50%;
+  text-align: center;
+}
+
+.activ-info p {
+  margin: 5px;
+  padding: 5px;
+}
+
+.button-container {
+  margin-left: 590px;
+  margin-top: 10px;
+}
+
+.button-container-cand {
+  margin-left: 666px;
+  margin-top: 10px;
+}

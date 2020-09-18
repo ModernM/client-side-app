@@ -17,9 +17,13 @@ function CreateProject() {
       title: data.title,
       objectives: data.objectives,
     };
-    fetch("http://localhost:5000/projects", {
+    fetch("http://34.89.31.240:5000/projects", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `bearer ${localStorage.getItem("token")}`,
+      },
+
       body: JSON.stringify(project),
     });
     console.log(project);

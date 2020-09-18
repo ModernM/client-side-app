@@ -21,7 +21,7 @@ function ProjectDetails({ match }) {
 
   const fetchProject = async () => {
     const fetchedProject = await fetch(
-      `http://localhost:5000/projects/${match.params.id}`
+      `http://34.89.31.240:5000/projects/${match.params.id}`
     );
     const project = await fetchedProject.json();
     setProject(project);
@@ -29,7 +29,7 @@ function ProjectDetails({ match }) {
 
   const deleteProject = async () => {
     const deletedProject = await fetch(
-      `http://localhost:5000/projects/${project._id}`,
+      `http://34.89.31.240:5000/projects/${project._id}`,
       {
         method: "DELETE",
       }

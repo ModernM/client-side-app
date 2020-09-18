@@ -1,0 +1,29 @@
+#page-name {
+  text-align: center;
+  font-size: 50px;
+  background-color: #cdbec1;
+  color: #000;
+}
+
+.icon {
+  padding: 20px;
+}
+
+.icon-container {
+  display: block;
+  background-color: #cdbec1;
+  margin-top: 10px;
+  width: 50%;
+  padding-left: 307px;
+  margin-bottom: 40px;
+}
+
+.name-container {
+  display: block;
+  text-align: center;
+  width: 50%;
+  height: 50vh;
+  background-color: #cdbec1;
+  margin-top: -40px;
+  padding-top: 80px;
+}
